@@ -1,0 +1,33 @@
+.buttonStyle {
+  background-color: red;
+  width: 70px;
+  height: 70px;
+  font-size: 50px;
+}
+#valueStyle {
+  font-size: 40px;
+}
+.positionStyle {
+  margin: 100px 700px;
+}
+
+#inputField {
+  width: 200px;
+  height: 30px;
+  font-size: 30px;
+  margin: 50px 0 20px 50px;
+}
+
+#themeBox {
+  margin: 0 0 20px 50px;
+  width: 200px;
+  height: 30px;
+  font-size: 20px;
+}
+
+#buttonStyle {
+  margin: 0 0 20px 50px;
+  width: 150px;
+  height: 30px;
+  font-size: 15px;
+}
