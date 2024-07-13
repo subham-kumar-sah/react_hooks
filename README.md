@@ -1,6 +1,6 @@
 Use State:
 
---> The initial value of useState will initialize the state value when we re- render the compoment by the use of arrow function and then returning the value will initialize only once and then it won't, this would be helpful in some complex computation(generally not preferred).
+--> The value of useState will be initialized only once in case of arrow functions are used for initializing the value as the arrow function will run only once, but in case of regular functions if we try to initialize with it, then it will be rendered every time setState is used.
 Ex: const [count, setCount] = useState(()=>{
 return 0;
 })
@@ -12,11 +12,12 @@ UseEffect:
 --> If dependency array is missing then too the useEffect works and it will run the code inside it after every re-render.
 --> If only empty array is present then it will work as mounting of component.
 --> If anything is present in array then it will run code inside it in change of array value.
+--> To unmount anthing we use the return statement which is returning a function and performing any action we need to while unmounting.
 
 UseMemo:
 
 --> Although useMemo gives us caching abilities it shouldn't be used everytime, as it will block unnecessary memory, so it should be only used for storing time taking operations, so that they are not performed everytime our components re-renders.
---> Referrential equality : This means that it doesnot run a perticular code only on change of value but on change of reference(as in case of useEffect which changes on refrence in case of objects and arrays).
+--> Referrential equality : This means that it doesnot run a perticular code only on change of reference but on change of value(which is not in case of useEffect which runs due to changes on refrence in case of objects and arrays).
 
 UseRef:
 
